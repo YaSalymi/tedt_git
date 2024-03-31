@@ -159,6 +159,7 @@ public class RelayManager : NetworkBehaviour
 
     private void OnClientConnectedCallback(ulong clientId)
     {
+        Debug.LogError(NetworkManager.Singleton.LocalClientId);
         Debug.LogError(NetworkManager.ConnectedClients.Count);
     }
 

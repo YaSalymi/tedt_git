@@ -22,7 +22,14 @@ public class GameUIManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseUIPlain.SetActive(!pauseUIPlain.activeSelf);
-            
+            if (pauseUIPlain.activeSelf)
+            {
+                FakeCursor.Instance.UnlockCursor();
+            }
+            else
+            {
+                FakeCursor.Instance.LockCursor();
+            }
         }
     }
 

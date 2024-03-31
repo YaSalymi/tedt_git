@@ -1,5 +1,5 @@
 {
-    "name": "PlayerInputActions",
+    "name": "PlayerMovementInput",
     "maps": [
         {
             "name": "Player",
@@ -9,6 +9,24 @@
                     "name": "Move",
                     "type": "Value",
                     "id": "9bf79400-3f4a-4313-a87d-382870448b92",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Fier",
+                    "type": "Button",
+                    "id": "aba3d6bb-40dd-46d9-a125-53255e4bc79b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MousePosition",
+                    "type": "Value",
+                    "id": "a666e25c-fcd3-4325-b8e6-c93d7b5549b2",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -125,6 +143,28 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "1f7cdea4-7ac3-409c-96f5-92b67cfd4fc4",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and Mouse",
+                    "action": "Fier",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1a48e9b2-4057-488b-bd94-d84eb6c1e515",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and Mouse",
+                    "action": "MousePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
